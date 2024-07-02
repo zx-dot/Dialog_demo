@@ -1,8 +1,0 @@
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/Dialog_test2.dir
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/list_install_components.dir
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/install.dir
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/install/local.dir
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/Dialog_test2_autogen_timestamp_deps.dir
-D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/Dialog_test2_autogen.dir
