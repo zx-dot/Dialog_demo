@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/Cancel.png</file>
+        <file>icons/Info.png</file>
+        <file>icons/Warning.png</file>
+    </qresource>
+</RCC>

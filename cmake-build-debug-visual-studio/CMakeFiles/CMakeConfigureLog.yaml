@@ -1,0 +1,229 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/install/vs2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30152 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.29.30152.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\project\\QWidgetProject\\PopDialog\\Dialog_test2\\cmake-build-debug-visual-studio\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-4oihn1"
+      binary: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-4oihn1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-4oihn1'
+        
+        Run Build Command(s): "D:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_d0181
+        [1/2] D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d0181.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_d0181.dir\\ /FS -c "D:\\Program Files\\JetBrains\\CLion 2023.3.2\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] cmd.exe /C "cd . && "D:\\Program Files\\JetBrains\\CLion 2023.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_d0181.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d0181.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_d0181.exe /implib:cmTC_d0181.lib /pdb:cmTC_d0181.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ut2vfg"
+      binary: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ut2vfg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ut2vfg'
+        
+        Run Build Command(s): "D:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_970d2
+        [1/2] D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_970d2.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_970d2.dir\\ /FS -c D:\\project\\QWidgetProject\\PopDialog\\Dialog_test2\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ut2vfg\\src.cxx
+        FAILED: CMakeFiles/cmTC_970d2.dir/src.cxx.obj 
+        D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_970d2.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_970d2.dir\\ /FS -c D:\\project\\QWidgetProject\\PopDialog\\Dialog_test2\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ut2vfg\\src.cxx
+        D:\\project\\QWidgetProject\\PopDialog\\Dialog_test2\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ut2vfg\\src.cxx(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-pdwkza"
+      binary: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-pdwkza"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-pdwkza'
+        
+        Run Build Command(s): "D:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_c98aa
+        [1/2] D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_c98aa.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_c98aa.dir\\ /FS -c D:\\project\\QWidgetProject\\PopDialog\\Dialog_test2\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-pdwkza\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && "D:\\Program Files\\JetBrains\\CLion 2023.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c98aa.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c98aa.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_c98aa.exe /implib:cmTC_c98aa.lib /pdb:cmTC_c98aa.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_c98aa.exe 
+        cmd.exe /C "cd . && "D:\\Program Files\\JetBrains\\CLion 2023.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c98aa.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c98aa.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_c98aa.exe /implib:cmTC_c98aa.lib /pdb:cmTC_c98aa.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c98aa.dir\\CheckFunctionExists.cxx.obj /out:cmTC_c98aa.exe /implib:cmTC_c98aa.lib /pdb:cmTC_c98aa.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c98aa.dir/intermediate.manifest CMakeFiles\\cmTC_c98aa.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-tl49v6"
+      binary: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-tl49v6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-tl49v6'
+        
+        Run Build Command(s): "D:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_c8e1d
+        [1/2] D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_c8e1d.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_c8e1d.dir\\ /FS -c D:\\project\\QWidgetProject\\PopDialog\\Dialog_test2\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-tl49v6\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && "D:\\Program Files\\JetBrains\\CLion 2023.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c8e1d.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c8e1d.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_c8e1d.exe /implib:cmTC_c8e1d.lib /pdb:cmTC_c8e1d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_c8e1d.exe 
+        cmd.exe /C "cd . && "D:\\Program Files\\JetBrains\\CLion 2023.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c8e1d.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c8e1d.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_c8e1d.exe /implib:cmTC_c8e1d.lib /pdb:cmTC_c8e1d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c8e1d.dir\\CheckFunctionExists.cxx.obj /out:cmTC_c8e1d.exe /implib:cmTC_c8e1d.lib /pdb:cmTC_c8e1d.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c8e1d.dir/intermediate.manifest CMakeFiles\\cmTC_c8e1d.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
+      - "D:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:157 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-xlmvfb"
+      binary: "D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-xlmvfb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/install/Qt6/6.5.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/project/QWidgetProject/PopDialog/Dialog_test2/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-xlmvfb'
+        
+        Run Build Command(s): "D:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_e0343
+        [1/2] D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_e0343.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_e0343.dir\\ /FS -c D:\\project\\QWidgetProject\\PopDialog\\Dialog_test2\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-xlmvfb\\src.cxx
+        [2/2] cmd.exe /C "cd . && "D:\\Program Files\\JetBrains\\CLion 2023.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e0343.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- D:\\install\\vs2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e0343.dir\\src.cxx.obj  /out:cmTC_e0343.exe /implib:cmTC_e0343.lib /pdb:cmTC_e0343.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...
