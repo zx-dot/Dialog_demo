@@ -4,9 +4,7 @@
 #include <QScreen>
 #include <QPaintEvent>
 #include <QPainter>
-// #include <QPainter>
-// #include <QtConcurrent>
-// #include <QFutureWatcher>
+
 
 int MessageDialog::stackCount = 0;
 
@@ -25,21 +23,6 @@ MessageDialog::MessageDialog(MessageType type, const QString &message, QWidget *
         connect(closeTimer, &QTimer::timeout, this, &MessageDialog::closeDialog);
         closeTimer->start(1000); // 1 seconds timeout for Information messages
     }
-    // else if(messageType == MessageType::Waitting) {
-    //         QFutureWatcher<void> *watcher = new QFutureWatcher<void>();
-    //         connect(watcher, &QFutureWatcher<void>::finished, this, &MessageDialog::closeDialog);
-
-    //         // Start the loading task in a separate thread
-    //         QFuture<void> future = QtConcurrent::run([=]() {
-    //             // Simulate a long-running task
-    //             QThread::sleep(5); // Replace with actual loading task
-
-    //             // Notify the watcher that the task is finished
-    //             watcher->finish();
-    //         });
-
-    //         watcher->setFuture(future);
-    //     }
 
 }
 
@@ -134,16 +117,6 @@ void MessageDialog::initUI(const QString &message) {
         label->setText("提示："+message);
         label->setAlignment(Qt::AlignCenter);//使文字居中显示
         break;
-//    case MessageType::Waitting:
-//        QDialog dialog;
-//       dialog.setModal(true); // 设置为模态对话框，阻塞主窗口的输入
-//            // 创建加载动画组件
-//        SlinkyCircle *loadingAnim = new SlinkyCircle(&dialog);
-//        loadingAnim->start();
-//            // 设置对话框布局
-//        QVBoxLayout dialogLayout(&dialog);
-//        dialogLayout.addWidget(loadingAnim);
-//        break;
     default:
         break;
     }
@@ -196,84 +169,3 @@ void MessageDialog::mousePressEvent(QMouseEvent *event)
 }
 
 
-//添加了加载动画的部分
-LoadingAnimBase::LoadingAnimBase(QWidget *parent) : QWidget(parent) {
-    mAnim.setPropertyName("angle");
-    mAnim.setTargetObject(this);
-    mAnim.setDuration(2000);
-    mAnim.setLoopCount(-1);//run forever
-    mAnim.setEasingCurve(QEasingCurve::Linear);
-    setFixedSize(200, 200);
-    mAngle = 0;
-}
-
-LoadingAnimBase::~LoadingAnimBase() {}
-
-void LoadingAnimBase::exec() {
-    if (mAnim.state() == QAbstractAnimation::Stopped) {
-        start();
-    } else {
-        stop();
-    }
-}
-
-void LoadingAnimBase::start() {
-    mAnim.setStartValue(0);
-    mAnim.setEndValue(360);
-    mAnim.start();
-}
-
-void LoadingAnimBase::stop() {
-    mAnim.stop();
-}
-
-qreal LoadingAnimBase::angle() const { return mAngle; }
-
-void LoadingAnimBase::setAngle(qreal an) {
-    mAngle = an;
-    update();
-}
-
-WaittingDialog::WaittingDialog(QWidget *parent) : LoadingAnimBase(parent) {
-    mAnim.setEasingCurve(QEasingCurve::InOutCubic);
-}
-
-void WaittingDialog::paintEvent(QPaintEvent *event) {
-    QPainter painter(this);
-    painter.setRenderHint(QPainter::Antialiasing);
-    painter.setPen(Qt::NoPen);
-    //画圆弧
-    painter.setBrush(Qt::NoBrush);
-    const int x = this->width();
-    const int y = this->height();
-    QPen pen("#008CD6");//
-    pen.setCapStyle(Qt::RoundCap);
-    pen.setWidth(x / 20);
-    painter.setPen(pen);
-
-    painter.translate(x / 2, y / 2);
-
-    static const qreal spanAngle = 90;//mAngle<=45,要把弧线拉伸出来
-    static const qreal shrinkAngle = 360 - spanAngle;//mAngle==315时,要把弧线收缩起来
-
-    auto arcRect = this->rect().adjusted(x / 5, y / 5, -x / 5, -y / 5);
-    arcRect.translate(-x / 2, -y / 2);
-
-    static const int direction = -1;//顺时针
-
-    if (mAngle < spanAngle) {
-        painter.drawArc(arcRect, 90 * 16, mAngle * 16 * direction);
-    } else {//弧长是固定的
-        //40 - 320 --> 320 , 280 --> 320
-        if (mAngle > shrinkAngle) {
-            painter.drawArc(arcRect, 90 * 16, -(360 - mAngle) * 16 * direction);
-        } else {
-            //我转动的角度是当前角度 - 拉伸门槛,因为有收尾的不动的时间段,占据了一段角度,所以要把转动的角度拉伸一些,
-            //这个比例就是 (360-spanAngle) / (shrinkAngle - spanAngle)
-            const auto delta = (mAngle - spanAngle) * (360 - spanAngle) / (shrinkAngle - spanAngle);
-            painter.rotate(-delta * direction);
-            painter.drawArc(arcRect, 90 * 16, spanAngle * 16 * direction);
-        }
-    }
-
-}

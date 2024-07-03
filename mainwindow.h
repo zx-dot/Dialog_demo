@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "MessageDialog.h"
+#include "WaitingDialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -34,6 +35,7 @@ private:
     MessageDialog *dialog;
     MessageDialog *dialog1;
     MessageDialog *dialog2;
+    WaitingDialog *waiting;
 
     // QWidget interface
 protected:

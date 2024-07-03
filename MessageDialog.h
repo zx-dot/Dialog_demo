@@ -31,7 +31,6 @@ protected:
     void mousePressEvent(QMouseEvent *event) override;
 
 private:
-//    int duration;
     QLabel *label;
     QLabel *lblIcon;
     QPropertyAnimation *animation;

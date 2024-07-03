@@ -58,7 +58,14 @@ void MainWindow::on_mutilMessageBtn_clicked()
 
 void MainWindow::on_waittingBtn_clicked()
 {
+    waiting =new WaitingDialog();
+    waiting->show();
+    QTimer::singleShot(5000, waiting,&WaitingDialog::close);
 
+//    QTimer closeWaitTimer;
+//    closeWaitTimer.setSingleShot(true);
+//    connect(closeWaitTimer, &QTimer::timeout, waiting, &WaitingDialog::close);
+//    closeWaitTimer.start(1000); // 1 seconds timeout for Information messages
 }
 
 void MainWindow::closeEvent(QCloseEvent *event)
